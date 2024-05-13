@@ -9,7 +9,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 
 # Tabs and Windows
 |Action|Shortcut|
-|-|-|
+|---|---|
 |New Window|⌘ + n|
 |New Tab|⌘ + t|
 |Reopen previously closed tabs in the order they were closed|⌘ + Shift + t|
@@ -24,7 +24,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 
 # Find
 |Action|Shortcut|
-|-|-|
+|---|---|
 |Open Find Bar|⌘ + f|
 |In Find Bar, next match|⌘ + g|
 |In Find Bar, previous match|⌘ + Shift + g|
@@ -32,7 +32,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 
 # Other
 |Action|Shortcut|
-|-|-|
+|---|---|
 |Developer Tools|⌘ + Option + i|
 |JavaScript console|⌘ + Option + j|
 |Navigate to address bar|⌘ + l|
