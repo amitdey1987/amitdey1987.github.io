@@ -8,6 +8,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 [Official Google Chrome Keyboard Shortcuts](https://support.google.com/chrome/answer/157179)
 
 # Tabs and Windows
+
 |Action|Shortcut|
 |---|---|
 |New Window|⌘ + n|
@@ -23,6 +24,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Quit|⌘ + q|
 
 # Find
+
 |Action|Shortcut|
 |---|---|
 |Open Find Bar|⌘ + f|
@@ -31,6 +33,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Open Find Bar with selected text|⌘ + i|
 
 # Other
+
 |Action|Shortcut|
 |---|---|
 |Developer Tools|⌘ + Option + i|
