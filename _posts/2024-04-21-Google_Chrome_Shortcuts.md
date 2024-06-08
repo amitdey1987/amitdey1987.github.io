@@ -39,7 +39,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Developer Tools|⌘ + Option + i|
 |JavaScript console|⌘ + Option + j|
 |Navigate to address bar|⌘ + l|
-|Full screen|fn + f|
+|Full screen|⌘ + Ctrl + f|
 |Bigger|⌘ + +|
 |Smaller|⌘ + -|
 |Default Size|⌘ + 0|
