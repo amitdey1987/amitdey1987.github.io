@@ -9,6 +9,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 [Official Visual Studio Code Shortcuts](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
 # General
+
 |Action|Shortcut|
 |-|-|
 |Open|⌘ + o|
@@ -16,6 +17,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |New File|⌘ + w|
 
 # Editing
+
 |Action|Shortcut|
 |-|-|
 |Cut|⌘ + x|
@@ -29,6 +31,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Toggle Comment|⌘ + /|
 
 # Search
+
 |Action|Shortcut|
 |-|-|
 |Find|⌘ + f|
@@ -39,6 +42,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Rename Symbol|F2|
 
 # Navigation
+
 |Action|Shortcut|
 |-|-|
 |Go to line|Control + G|
