@@ -30,7 +30,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Open Find Bar|⌘ + f|
 |In Find Bar, next match|⌘ + g|
 |In Find Bar, previous match|⌘ + Shift + g|
-|Open Find Bar with selected text|⌘ + i|
+|Open Find Bar with selected text|⌘ + e|
 
 # Other
 
