@@ -10,3 +10,4 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Action|Shortcut|
 |---|---|
 |Screenshot Entire Screen|Shift+⌘+3|
+|Screenshot Portion of Screen|Shift+⌘+4|
