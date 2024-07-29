@@ -10,19 +10,3 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Action|Shortcut|
 |---|---|
 |Screenshot Entire Screen|Shift+⌘+3|
-
-# Tabs and Windows
-
-|Action|Shortcut|
-|---|---|
-|New Window|⌘ + n|
-|New Tab|⌘ + t|
-|Reopen previously closed tabs in the order they were closed|⌘ + Shift + t|
-|Previous/Next tab|⌘ + Option + Left/Right arrow|
-|Specific tab|⌘ + 1 thought ⌘ + 8|
-|Last tab|⌘ + 9|
-|Previous/Next page in browsing history|⌘ + Left/Right arrow|
-|Close tab|⌘ + w|
-|Close window|⌘ + Shift + w|
-|Minimize window|⌘ + m|
-|Quit|⌘ + q|
