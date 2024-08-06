@@ -5,7 +5,7 @@ tags: tools mac
 ---
 I am new to the Mac environment and still learning to use it effectively. This post focucess on IntelliJ IDEA shortcuts.
 
-# Screenshot
+# Navigation
 
 |Action|Shortcut|
 |---|---|
