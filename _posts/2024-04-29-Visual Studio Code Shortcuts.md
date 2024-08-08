@@ -50,3 +50,4 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Go to symbol|Shift + ⌘ + o|
 |Go to next/previous warning|F8/Shift + F8|
 |Go Back/Forward|Control + -/Shift + Control + -|
+|Open Definition in new file|⌘ + Option + p|
