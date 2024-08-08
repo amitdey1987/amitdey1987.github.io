@@ -35,6 +35,7 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Action|Shortcut|
 |-|-|
 |Find|⌘ + f|
+|Find File|⌘ + p|
 |Replace|Option + ⌘ + f|
 |In Search, Next/Previous|⌘ + g/Shift + ⌘ + g|
 |In Search, Highlight All|Option + Enter|
