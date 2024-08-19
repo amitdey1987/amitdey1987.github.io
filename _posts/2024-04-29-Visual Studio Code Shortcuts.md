@@ -53,3 +53,4 @@ I am new to the Mac environment and still learning to use it effectively. This p
 |Goto Definition|F12|
 |Goto Declaration|⌘ + F12|
 |Open Definition in new file|⌘ + Option + p|
+|Next Error|Option + F8|
