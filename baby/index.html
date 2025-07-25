@@ -6,7 +6,9 @@
  <body>
   <span id="spanDate">Date</span>
   <script>
-    document.getElementById("spanDate").innerHTML = (new Date()).getDate();
+    today = new Date();
+    key = today.getYear() + "+_" + today.getMonth() + "_" + today.getDate();
+    document.getElementById("spanDate").innerHTML = key;
   </script>
  </body>
 </html>
