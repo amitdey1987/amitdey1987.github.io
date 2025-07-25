@@ -4,9 +4,21 @@
   <title>Baby</title>
  </head>
  <body>
-  <span id="spanDate">Date</span>
-  <input type="checkbox" id="firstDose" name="firstDose" >First Dose</input>
-  <input type="checkbox" id="secondDose" name="secondDose" >Second Dose</input>
+  <table>
+   <tr>
+     <td>
+      <span id="spanDate">Date</span>
+     </td>
+   </tr>
+   <tr>
+    <td>
+     <input type="checkbox" id="firstDose" name="firstDose" >First Dose</input>
+    </td> 
+    <td>
+     <input type="checkbox" id="secondDose" name="secondDose" >Second Dose</input>
+    </td>
+   </tr>
+  </table>
   <script>
     today = new Date();
     key = today.getFullYear() + "_" + (1 + today.getMonth()) + "_" + today.getDate();
