@@ -7,7 +7,7 @@
   <span id="spanDate">Date</span>
   <script>
     today = new Date();
-    key = today.getYear() + "+_" + today.getMonth() + "_" + today.getDate();
+    key = today.getFullYear() + "_" + (1 + today.getMonth()) + "_" + today.getDate();
     document.getElementById("spanDate").innerHTML = key;
   </script>
  </body>
