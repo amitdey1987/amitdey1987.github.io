@@ -38,7 +38,16 @@
     }
 
     main {
-      width: min(100%, 50rem);
+      width: min(100%, 68rem);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      display: grid;
+      align-items: start;
+      justify-items: center;
       padding: clamp(2.5rem, 7vw, 5.5rem);
       text-align: center;
       background: rgba(255, 255, 255, 0.78);
@@ -47,58 +56,31 @@
       box-shadow: 0 1.5rem 4rem rgba(50, 40, 24, 0.12);
     }
 
-    .eyebrow {
-      margin: 0 0 1.3rem;
-      color: #a15c2f;
-      font-size: 0.78rem;
-      font-weight: 750;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .count {
+    .message {
+      width: 100%;
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(7rem, 28vw, 14rem);
-      font-variant-numeric: tabular-nums;
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
       font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .number {
+      display: grid;
+      place-items: center;
+      height: 1em;
+      margin-bottom: 1.5rem;
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(7rem, 15vw, 11rem);
+      font-variant-numeric: lining-nums tabular-nums;
       letter-spacing: -0.07em;
-      line-height: 0.76;
+      line-height: 0.78;
     }
 
-    h1 {
-      margin: 2rem 0 0.7rem;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 400;
-      line-height: 1;
-    }
-
-    .dates {
-      margin: 0;
-      color: #5e6965;
-      font-size: clamp(0.95rem, 2vw, 1.1rem);
-    }
-
-    button {
-      margin-top: 2.25rem;
-      padding: 0.8rem 1.25rem;
-      border: 0;
-      border-radius: 999px;
-      background: #152c28;
-      color: #fff;
-      font: inherit;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #254b44;
-    }
-
-    button:focus-visible {
-      outline: 3px solid #e9b347;
-      outline-offset: 4px;
+    @media (max-width: 48rem) {
+      main {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media print {
@@ -121,15 +103,16 @@
         width: 100%;
         min-height: 9.5in;
         display: grid;
+        grid-template-columns: 1fr;
         align-content: center;
+        gap: 0.35in;
+      }
+
+      .card {
         border: 2px solid #152c28;
         border-radius: 0;
         box-shadow: none;
         background: #fff;
-      }
-
-      button {
-        display: none;
       }
     }
   </style>
@@ -137,19 +120,25 @@
 
 <body>
   <main>
-    <p class="eyebrow">September 2, 2026 → Today</p>
-    <p class="count" id="day-count" aria-live="polite">—</p>
-    <h1 id="headline">Days Since</h1>
-    <p class="dates" id="date-range">Calculating…</p>
-    <button type="button" onclick="window.print()">Print this page</button>
+    <section class="card">
+      <p class="message">
+        <span class="number" id="day-count" aria-live="polite">—</span>
+        days since news
+      </p>
+    </section>
+
+    <section class="card">
+      <p class="message">
+        <span class="number" id="days-until" aria-live="polite">—</span>
+        days until pay stops
+      </p>
+    </section>
   </main>
 
   <script>
     const start = new Date(2026, 8, 2);
     const today = new Date();
 
-    // Convert local calendar dates to UTC before subtracting them.
-    // This prevents daylight-saving changes from affecting the result.
     const startUtc = Date.UTC(
       start.getFullYear(),
       start.getMonth(),
@@ -162,26 +151,27 @@
       today.getDate()
     );
 
-    const days = Math.floor((todayUtc - startUtc) / 86400000);
+    const days = Math.floor(
+      (todayUtc - startUtc) / 86400000
+    );
 
-    const format = new Intl.DateTimeFormat(undefined, {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
+    const destination = new Date(2027, 1, 22);
+
+    const destinationUtc = Date.UTC(
+      destination.getFullYear(),
+      destination.getMonth(),
+      destination.getDate()
+    );
+
+    const daysUntil = Math.ceil(
+      (destinationUtc - todayUtc) / 86400000
+    );
 
     document.getElementById("day-count").textContent =
       Math.abs(days).toLocaleString();
 
-    document.getElementById("headline").textContent =
-      days >= 0
-        ? `Day${days === 1 ? "" : "s"} Since`
-        : `Day${days === -1 ? "" : "s"} Until`;
-
-    document.getElementById("date-range").textContent =
-      days >= 0
-        ? `${format.format(start)} — ${format.format(today)}`
-        : `${format.format(today)} — ${format.format(start)}`;
+    document.getElementById("days-until").textContent =
+      Math.abs(daysUntil).toLocaleString();
   </script>
 </body>
 </html>
