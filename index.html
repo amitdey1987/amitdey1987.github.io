@@ -133,6 +133,13 @@
         days until pay stops
       </p>
     </section>
+
+    <section class="card">
+      <p class="message">
+        <span class="number" id="leetcode-target" aria-live="polite">—</span>
+        target leetcode solved
+      </p>
+    </section>
   </main>
 
   <script>
@@ -172,6 +179,9 @@
 
     document.getElementById("days-until").textContent =
       Math.abs(daysUntil).toLocaleString();
+
+    document.getElementById("leetcode-target").textContent =
+      (Math.abs(days) * 4).toLocaleString();
   </script>
 </body>
 </html>
