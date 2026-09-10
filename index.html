@@ -49,7 +49,9 @@
       align-items: start;
       justify-items: center;
       padding: clamp(1.25rem, 4vh, 3rem) clamp(1.25rem, 4vw, 3rem);
+      color: inherit;
       text-align: center;
+      text-decoration: none;
       background: rgba(255, 255, 255, 0.78);
       border: 1px solid rgba(21, 44, 40, 0.15);
       border-radius: 2rem;
@@ -134,12 +136,22 @@
       </p>
     </section>
 
-    <section class="card">
+    <a class="card" href="https://leetcode.com/problemset/">
       <p class="message">
         <span class="number" id="leetcode-target" aria-live="polite">—</span>
         target leetcode solved
       </p>
-    </section>
+    </a>
+
+    <a
+      class="card"
+      href="https://www.educative.io/courses/grokking-the-system-design-interview"
+    >
+      <p class="message">
+        <span class="number" id="grokking-progress" aria-live="polite">—</span>
+        target grokking completed
+      </p>
+    </a>
   </main>
 
   <script>
@@ -174,6 +186,11 @@
       (destinationUtc - todayUtc) / 86400000
     );
 
+    const grokkingEndUtc = Date.UTC(2026, 9, 2);
+    const grokkingProgress = Math.round(
+      ((todayUtc - startUtc) / (grokkingEndUtc - startUtc)) * 100
+    );
+
     document.getElementById("day-count").textContent =
       Math.abs(days).toLocaleString();
 
@@ -182,6 +199,9 @@
 
     document.getElementById("leetcode-target").textContent =
       (Math.abs(days) * 4).toLocaleString();
+
+    document.getElementById("grokking-progress").textContent =
+      `${Math.min(100, Math.max(0, grokkingProgress))}%`;
   </script>
 </body>
 </html>
